@@ -1,0 +1,28 @@
+// Cryptogen - Used for generating hyperledger fabric key materials for test environments
+// In real world applications, we will be using CAs.
+------------------------------------------------------------------------------------------------------------------
+
+
+/* Workflow*/
+
+    1. Use showtemplate command to write in a yaml file regarding organizations.
+    2. Use generate command to generate their crypto-materials.
+    3. Use extend command to add more peers, users, orderers, and organizations.
+------------------------------------------------------------------------------------------------------------------
+
+
+/* Commands */
+
+cryptogen / cryptogen help  (both work the same)
+cryptogen version
+cryptogen showtemplate
+cryptogen showtemplate > crypto-config.yaml
+cryptogen generate --config="crypto-config.yaml"
+cryptogen extend --config="add2Peer_and_3_users_in_org1.yaml"
+------------------------------------------------------------------------------------------------------------------
+
+// In the above cases, we have not defined the output folder for generating crypto-config materials. So, it'll be generated in the 'crypto-config' directory.
+
+// To overwrite this, use '--output="DIRECTORY_NAME"'
+// While extending, we will also need to explictly specify the input directory, use '--input="DIRECTORY_NAME"'
+

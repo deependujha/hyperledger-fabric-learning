@@ -1,0 +1,14 @@
+PeerOrgs:
+  - Name: Org1
+    Domain: org1.example.com
+    EnableNodeOUs: false
+    Specs:
+      - Hostname: deependujha
+        CommonName: deependu
+      - Hostname: niteshkumar
+        CommonName: nitesh
+      - Hostname: ajstyles
+        CommonName: aj
+        
+    Users:
+      Count: 4
