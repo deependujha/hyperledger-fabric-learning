@@ -17,7 +17,7 @@ cryptogen / cryptogen help  (both work the same)
 cryptogen version
 cryptogen showtemplate
 cryptogen showtemplate > crypto-config.yaml
-cryptogen generate --config="crypto-config.yaml"
+cryptogen generate --config="crypto-config.yaml"   (for this project, use "01_crypto-config.yaml")
 cryptogen extend --config="add2Peer_and_3_users_in_org1.yaml"
 ------------------------------------------------------------------------------------------------------------------
 
